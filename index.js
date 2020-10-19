@@ -22,6 +22,7 @@ app.use(express.json())
 app.get("/", (req, res) => {
     res.send("test")
 })
+
 app.use(require("./api/user"))
 app.use(require("./api/lesson"))
 
