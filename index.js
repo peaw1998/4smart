@@ -5,7 +5,11 @@ const app = express()
 
 
 mongoose.connect(
-    "mongodb+srv://Somporn:maapeaw5500@4smart.hz8li.mongodb.net/4smart?retryWrites=true&w=majority"
+    "mongodb+srv://Somporn:maapeaw5500@4smart.hz8li.mongodb.net/4smart?retryWrites=true&w=majority",
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }
 )
 
 var db = mongoose.connection

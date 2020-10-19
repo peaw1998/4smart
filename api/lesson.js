@@ -19,8 +19,6 @@ router.post("/api/lesson", async (req, res, next) => {
             await Lesson.create({
                 lesson: lesson,
                 content: content
-            }).then((result) => {
-                console.log("result", result);
             })
             res.status(200).send("create success")
         } else {

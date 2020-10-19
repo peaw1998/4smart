@@ -9,8 +9,6 @@ router.post("/api/user", async (req, res, next) => {
                 firstname: firstname,
                 lastname: lastname,
                 age: age
-            }).then((result) => {
-                console.log("result", result);
             })
             res.status(200).send("create success")
         } else {
